@@ -1,0 +1,71 @@
+*{
+    margin: none;
+}
+
+
+/* contact btn nav*/
+.btn-ct .btn{
+    background-color: #1450A3;
+}
+
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .vehicle .card {
+    box-shadow:2px 2px 6px 0#2B3499;
+    padding: 0px;
+    text-align: center;
+    /* color: #0275d8;     */
+    border-radius: 0 !important;
+    transition: transform .2s;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .vehicle .card:hover{
+    box-shadow:0;
+    padding: 0px;
+    text-align: center;  
+    border-radius: 0 !important;
+    transform: scale(1.5);
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 800px) {
+    
+    html,body{
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      
+    }
+
+
+
+    }
+    
