@@ -1,13 +1,41 @@
+
+
 *{
     margin: none;
+     scroll-behavior: smooth;
+     font-family: Noto Sans;
+     font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+     
 }
+
+
+.navbar-nav .nav-item .nav-link{
+  color: white !important;
+}
+
+.navbar-nav .nav-item .nav-link:active{
+  color: rgb(0, 0, 0) !important;
+}
+
 
 
 /* contact btn nav*/
 .btn-ct .btn{
-    background-color: #1450A3;
+    background-color: #FFC436;
+    font-weight:700;
+    color:#000000;
 }
 
+.btn-ct .btn:hover{
+  background-color: #ffffff;
+  font-weight:800;
+  color:#337CCF;
+}
+
+ 
 
 /* Float four columns side by side */
 .column {
@@ -36,27 +64,34 @@
   }
   
   /* Style the counter cards */
-  .vehicle .card {
+  .projects .card {
     box-shadow:2px 2px 6px 0#2B3499;
     padding: 0px;
     text-align: center;
     /* color: #0275d8;     */
     border-radius: 0 !important;
-    transition: transform .2s;
+    transition: transform .1s;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  .vehicle .card:hover{
+  .projects .card:hover{
     box-shadow:0;
     padding: 0px;
     text-align: center;  
     border-radius: 0 !important;
-    transform: scale(1.5);
-    z-index: 1;
+    transform: scale(1.7) !important;
+    z-index: 1 !important;
+    cursor: pointer !important;
+    
   }
 
-  @media screen and (max-width: 800px) {
+  .projects img:hover{
+    opacity: 0.5 !important;
+  }
+
+  @media screen and (max-width: 800px) 
+  {
     
     html,body{
       margin: 0;
@@ -65,7 +100,60 @@
       
     }
 
-
-
+  }
+    /* If the screen size is 1200px wide or more, set the font-size to 80px */
+    @media (min-width: 1200px) {
+      .responsive-font-example {
+        font-size: 80px;
+      }
     }
+    /* If the screen size is smaller than 1200px, set the font-size to 80px */
+    @media (max-width: 1199.98px) {
+      .responsive-font-example {
+        font-size: 30px;
+      }
+    }
+  
+    .bg-primary{
+      background-color:#1450A3!important;
+    }
+    nav .scroll{
+      color:black !important;
+    }
+  
+    .vision h1{
+      color: #1450A3;
+      font-size: 5.5vh;
+    }
+
+    .about-us h1{
+      color: #000000;
+      font-size: 5.5vh;
+      
+    }
+    .about-us p{
+      color: #000000;
+     
+    }
+    .services h1{
+      color: #1450A3;
+     
+    }
+    .why h1{
+      color: #1450A3;
+      font-size: 5.5vh;
+      
+    }
+
+    .projects h1{
+      color: #1450A3;
+      font-size: 5.5vh;
+    }
+
+    .column .card p{
+      color: black;
+    }
+
+    
+
     
